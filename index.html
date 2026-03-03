@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<style>
+    .navbar {
+        background-color: #000000;
+    }
+    .nav-link {
+        color: #ffffff;
+        margin: 0 10px;
+    }
+    .nav-link:hover {
+        color: #ff0000cc;
+    }
+    .btn-hire {
+        background-color: #ff0000cc;
+        color: #ffffff;
+        border: none;
+        padding: 5px 16px;
+        border-radius: 4px;
+    }
+    .navbar-toggler-icon {
+        filter: invert(1);
+   
+    }
+
+
+
+
+
+
+
+
+
+
+      body {
+     background: url(photo/bbb.jpg);
+        background-size: cover;
+      
+        background-repeat: no-repeat;
+      color: #fff;
+    }
+
+
+    .hero{
+        background: url(photo/eiro-img.jpg);
+        background-size: cover;
+        background-position: center;
+        /* background-color: #000000; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        border: 3px solid #444;
+        border-radius: 30px;
+        height: 80vh;
+    }
+    .highlights {
+      color:  #ff0000cc;
+    }
+    .btn-red {
+      background-color: #ff0000cc;
+      color: #fbe9e9;
+      border: none;
+    }
+
+    .social-icons a:hover{
+      color: #a80808;
+    }
+   
+    .social-icons a {
+      color: #fff;
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    .hero-image img {
+      max-width: 100%;
+     height: 600px;
+    }
+
+
+
+    @media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+    height: auto;
+    padding: 60px 0;
+  }
+}
+
+
+
+        .section-title {
+      text-align: center;
+    }
+   
+    .progress {
+      height: 8px;
+      background-color: #6058588b;
+    }
+    .progress-bar {
+      background-color: #b00202;
+      width: 0;
+    }
+    .skill-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    #skills{
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 10px;
+     
+    }
+
+
+
+    .timeline-item {
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bg-box {
+  background-color: #3c3c3c71;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+
+
+
+.job-section {
+ 
+  color: #fff;
+}
+
+.job-card {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.job-card .logo-img {
+  width: 60px;
+  height: auto;
+}
+
+
+.consultation{
+  background: url(photo/bac1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+
+}
+
+#consultation-form input {
+  min-width: 200px;
+}
+
+.btn-danger {
+  background-color: #ff0000cc;
+  border: none;
+}
+
+footer{
+  background:linear-gradient(to right, rgb(157, 3, 3) , black);
+  padding: 10px 0;
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 130px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.flip-card-front {
+  background-color: #111;
+  color: white;
+}
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+.language-card {
+ box-shadow: inset 0.5px 0.5px 10px rgb(157, 15, 15);
+  color: white;
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.circle svg {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+.circle circle {
+  fill: none;
+  stroke: #333;
+  stroke-width: 8;
+  r: 45;
+  cx: 50;
+  cy: 50;
+}
+
+.circle .progress {
+  stroke: #8f0000;
+  stroke-dasharray: 282;
+  stroke-dashoffset: 282;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.circle .percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.badge{
+  background:linear-gradient(black,red) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Social-Icons i:hover {
+  
+  color: #a80808;
+}
+
+
+
+
+
+
+
+
+.back{
+  
+ background: linear-gradient(to right, black ,black , rgb(88, 2, 2));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+ <nav class="navbar navbar-expand-lg px-3  fixed-top">
+    <img src="photo/images.png" alt="" width="70" height="50" class="d-inline-block align-text-top me-2">
+ 
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+    
+  
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link" href="#">HOME MAIN</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">RESUME</a></li>
+    
+     
+      <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">BLOG & NEWS</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+    </ul>
+
+
+    <div class="d-flex align-items-center">
+      <button class="btn-hire me-3"> <i class="bi bi-person-plus"></i> HIRE ME</button>
+      <div class="d-lg-none">
+        <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="container p-5 hero  d-flex align-items-center" style="margin-top: 100px;">
+  <div class="row align-items-center " >
+
+    <div class="col-md-6">
+      <button class="btn btn-red mb-3">WELCOME TO MY WORLD</button>
+      <h1>Hello, I'm <span class="highlights" id="changing-word-1"></span></h1>
+      <p>
+
+    I am a <span class="text-danger">passionate developer</span> who <strong>creates unique experiences</strong>.  
+       through code and design. My focus is on delivering fast, creative, and efficient solutions that make your brand stand out. Every line of code is an opportunity to build something meaningful.
+      </p>
+      <div class="d-flex align-items-center mt-4">
+        <div class="social-icons me-4">
+          <a href="https://www.facebook.com/susan.yazdan.2025"><i class="bi bi-facebook"></i></a>
+          <a href="https://github.com/susanyazdan1382"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/susan-sultani-251441362/"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div>
+          <i class="bi bi-telephone-fill"></i> 
+         0794757292
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 text-center hero-image mb-2 mt-md-0">
+      <img src="photo/sussssss-removebg-preview.png" alt="Steven" class="img-fluid">
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<section class="container p-5 mt-5" id="skills">
+  <div class="text-center mb-4">
+    <button class="btn-red mb-3">PROFESSIONAL SKILL</button>
+    <h2>Creative Code Powerful  <span class="highlights">Results.</span></h2>
+   
+    <p class="text-secondary">
+        Custom-built solutions that elevate your brand and user experience
+    </p>
+  </div>
+
+  <div class="row ">
+    <div class="col-md-6">
+    
+      <div class="mb-4">
+        <div class="skill-label"><span>HTML</span><span>75%</span></div>
+        <div class="progress"><div class="progress-bar" data-skill="90%"></div></div>
+      </div>
+      <div class="mb-4">
+        <div class="skill-label"><span>CSS</span><span>80%</span></div>
+        <div class="progress"><div class="progress-bar" data-skill="80%"></div></div>
+      </div>
+      <div class="mb-4">
+        <div class="skill-label"><span>JAVASCRIPT</span><span>70%</span></div>
+        <div class="progress"><div class="progress-bar" data-skill="70%"></div></div>
+      </div>
+      <div class="mb-4">
+        <div class="skill-label"><span>PHP</span><span>40%</span></div>
+        <div class="progress"><div class="progress-bar" data-skill="40%"></div></div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+    <h1>MY SKILLS</h1>
+    <p class="mt-4">
+I blend creativity with code to deliver sleek, responsive, and user-friendly digital products. From front-end finesse to back-end logic, each skill adds precision and power to every project I build</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="timeline-section py-5">
+   <div class="text-center mb-4">
+    <button class="btn-red mb-3">EDUCATION</button>
+    <h2>My History of  <span class="highlights">Success.</span></h2>
+    <p>14+ Years Dedication of Education.</p>
+    <p class="text-secondary">
+        
+Over the past 14+ years, I’ve pursued education with passion and purpose — not just to gain knowledge, but to build a solid foundation  <br> for creativity and innovation. Each step of my academic journey has shaped my vision, sharpened my skills, and empowered me to turn ideas into impactful realities.
+
+    </p>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-5">
+        <div class="timeline-item mb-5 d-flex">
+          <div class="text-end pe-2">
+            <strong>2009-2021</strong><br>
+           SCHOOL
+          </div>
+          <div class="dot"></div>
+          <div class="ms-3 bg-box" >
+            <h5 >MEHRY HERAVI HIGH SCHOOL</h5>
+            <p>
+I studied at Mehry Heravi High School <br> where I built a strong foundation <br>and grew my interest in creativity and technology.
+</p>
+          </div>
+        </div>
+
+        <div class="timeline-item mb-5 d-flex">
+          <div class="text-end pe-3">
+            <strong>2021 - 2021</strong><br>
+            AL-WARES INSTITUTE
+          </div>
+          <div class="dot"></div>
+          <div class="ms-2 bg-box">
+            <h5>Accounting Manager</h5>
+            <p>
+I worked as Accounting Manager at Al-Wares Center for 3 mounth <br> handling finances and improving accounting processes.
+</p>
+          </div>
+        </div>
+
+         
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-md-6">
+        <div class="timeline-item mb-5 d-flex">
+          <div class="text-end pe-2">
+            <strong>2024-2024 </strong><br>
+            WASSA Office
+          </div>
+          <div class="dot"></div>
+          <div class="ms-4 bg-box">
+            <h5> Intern</h5>
+            <p>I did a 6-month internship at WASSA <br> Office as a Web Developer, where I gained practical <br> experience and improved my web development skills.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item mb-5 d-flex">
+          <div class="text-end pe-2">
+            <strong>2024-2025</strong><br>
+           CTI 
+          </div>
+          <div class="dot"></div>
+          <div class="ms-3 bg-box">
+            <h5>Student</h5>
+            <p>I studied Web Development for one year at CTI, <br> gaining skills in HTML, CSS, JavaScript, and other web technologies.</p>
+          </div>
+        </div>
+
+       
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+<section class="job-section py-5">
+   <div class="text-center mb-4">
+    <button class="btn-red mb-3">JOB EXPERIENCE</button>
+    <h2>My Skill & Work  <span class="highlights">Experiences.</span></h2>
+   
+    <p class="text-secondary">
+        My Work Experience in Various Fields & Skill.
+    </p>
+  </div>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Job Card 1 -->
+      <div class="col-md-6">
+        <div class="job-card p-4 h-100">
+          <button class="btn btn-outline-light mb-3">
+            <i class="bi bi-record-circle-fill text-danger me-2"></i> JOB DESCRIPTION
+          </button>
+          <h5 class="fw-bold">WEB Development</h5>
+          <div class="d-flex justify-content-between align-items-center my-2 text-light small">
+            <div>TALK & ACTION</div>
+            <div>JUN 2024 - DEC 2024</div>
+            <img src="photo/wassa.png" alt="Talk & Action" class="logo-img">
+          </div>
+          <hr class="bg-secondary">
+          <h6 class="fw-bold">WASSA</h6>
+          <p class="text-secondary">
+          I completed a 6-month internship at WASSA Office as a Web Developer, where I gained hands-on experience in front-end and back-end development. During this time, I worked on real projects, improved my coding skills, and learned how to build responsive and user-friendly websites in a professional environment.
+          </p>
+        </div>
+      </div>
+
+      <!-- Job Card 2 -->
+      <div class="col-md-6">
+        <div class="job-card p-4 h-100">
+          <button class="btn btn-outline-light mb-3">
+          <i class="bi bi-record-circle-fill text-danger me-2"></i> JOB DESCRIPTION
+          </button>
+          <h5 class="fw-bold">Intern</h5>
+          <div class="d-flex justify-content-between align-items-center my-2 text-light small">
+            <div>TALK & ACTION</div>
+            <div>JAN 2024 - DES 2025</div>
+            <img src="photo/photo_2025-11-22_15-20-47.jpg" alt="Ouakee" class="logo-img">
+          </div>
+          <hr class="bg-secondary">
+          <h6 class="fw-bold">CTI</h6>
+          <p class="text-secondary">
+           I studied for one year at CTI Educational Center in the Web Development department, where I strengthened my technical skills in HTML, CSS, JavaScript, and other web technologies.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="btn justify-content-center d-flex">
+      <button class="btn-red mt-4 p-2 rounded-3">READ MORE</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container text-center my-5">
+  <span class="badge p-3 mb-2">TOOL SKILL</span>
+  <h2><strong>SKILLS OF</strong> <span class="text-danger"> CODING.</span></h2>
+  <p class="text-secondary">Expertise in using the Skills of Coding.</p>
+ 
+
+  <div class="row justify-content-center mt-5">
+    <!-- Card Start -->
+    <div class="col-6 col-md-2 m-2">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex align-items-center justify-content-center">
+            <img src="photo/html.jpg" class="img-fluid w-100 h-100" alt="WordPress" >
+          </div>
+          <div class="flip-card-back d-flex flex-column align-items-center justify-content-center">
+            <h5>HTML</h5>
+            <h3>90%</h3>
+            <button class="btn btn-danger btn-sm mt-2">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="col-6 col-md-2 m-2">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex align-items-center justify-content-center">
+            <img src="photo/css.jpg" class="img-fluid w-100 h-100" alt="WordPress">
+          </div>
+          <div class="flip-card-back d-flex flex-column align-items-center justify-content-center">
+            <h5>CSS</h5>
+            <h3>80%</h3>
+            <button class="btn btn-danger btn-sm mt-2">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+      <div class="col-6 col-md-2 m-2">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex align-items-center justify-content-center">
+            <img src="photo/bootstrap.webp" class="img-fluid w-100 h-100" alt="WordPress">
+          </div>
+          <div class="flip-card-back d-flex flex-column align-items-center justify-content-center">
+            <h5>BOOTSTRAP</h5>
+            <h3>80%</h3>
+            <button class="btn btn-danger btn-sm mt-2">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+      <div class="col-6 col-md-2 m-2">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex align-items-center justify-content-center">
+            <img src="photo/js.jpg" class="img-fluid w-100 h-100" alt="WordPress">
+          </div>
+          <div class="flip-card-back d-flex flex-column align-items-center justify-content-center">
+            <h5>JS</h5>
+            <h3>60%</h3>
+            <button class="btn btn-danger btn-sm mt-2">READ MORE</button>
+          </div>
+        </div>
+      </div>  
+
+   
+  </div>
+</section>
+
+
+
+
+<hr>
+
+
+
+<section class="container text-center my-5">
+  <span class="badge mb-2 p-3">LANGUAGES</span>
+  <h2 class="fw-bold">I'm Understand With World <span class="text-danger">Language.</span></h2>
+  <p class="">I'm Ready to Work Better.</p>
+
+  <div class="row mt-5 justify-content-center">
+    <!-- Language Card -->
+    <div class="col-6 col-md-3 mb-4">
+      <div class="language-card p-3 rounded">
+        <div class="circle" data-percent="95">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle cx="50" cy="50" r="45" class="progress" style="stroke-dashoffset: calc(282 - (282 * 80 / 100));"></circle>
+          </svg>
+          <div class="percent">70%</div>
+        </div>
+        <h5 class="mt-3">ENGLISH</h5>
+        <small>LANGUAGES</small>
+      </div>
+    </div>
+
+    <!-- Repeat for other languages -->
+    <div class="col-6 col-md-3 mb-4">
+      <div class="language-card p-3 rounded">
+        <div class="circle" data-percent="90">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+<circle cx="50" cy="50" r="45" class="progress" style="stroke-dashoffset: calc(282 - (282 * 100 / 100));"></circle>
+          </svg>
+          <div class="percent">100%</div>
+        </div>
+        <h5 class="mt-3">PERSIAN</h5>
+        <small>LANGUAGES</small>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="language-card p-3 rounded">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="50" cy="50" r="45"></circle>
+            <circle cx="50" cy="50" r="45" class="progress" style="stroke-dashoffset: calc(282 - (282 * 65 / 100));"></circle>
+          </svg>
+          <div class="percent">40%</div>
+        </div>
+        <h5 class="mt-3">PASHTO</h5>
+        <small>LANGUAGES</small>
+      </div>
+    </div>
+
+   
+  </div>
+ </section>
+
+
+
+
+
+
+
+<section class="container my-5">
+  <div class="row align-items-center mt-5">
+    
+    <!-- Image -->
+    <div class="col-md-5 text-center mb-4 mb-md-0">
+      <img src="photo/s3-removebg-preview.png" class="img-fluid rounded" alt="Profile Photo">
+    </div>
+
+    <!-- Info -->
+    <div class="col-md-7 text-white">
+      <span class="badge px-5  py-3 mb-2">PROFIL</span>
+      <h2 class="fw-bold">Hello, I'm <span class="text-danger">SUSAN SULTANI</span><span class="text-danger">.</span></h2>
+      <h5 class="text-light">Developer Working & Designer.</h5>
+      <p class="text-secondary">
+       "I'm a passionate developer and creative designer with a focus on building smart, user-friendly digital experiences. With a strong eye for detail and a love for clean code, I blend functionality with visual appeal to deliver impactful results."
+      </p>
+
+      <div class="row mb-3">
+        <div class="col-sm-4"><strong>AGE</strong></div>
+        <div class="col-sm-8">: 21 YEARS</div>
+
+        <div class="col-sm-4"><strong>ADDRESS</strong></div>
+        <div class="col-sm-8">: Herat , Afganistan </div>
+
+        <div class="col-sm-4"><strong>PHONE</strong></div>
+        <div class="col-sm-8">: 0794757292</div>
+<div class="col-sm-4"><strong>EMAIL</strong></div>
+        <div class="col-sm-8">: susanyazdan1382@gmail.com</div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="mb-3 Social-Icons">
+        <a href="https://www.facebook.com/susan.yazdan.2025" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/susanyazdan1382" class="text-light me-3 fs-5"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/susan-sultani-251441362/" class="text-light fs-5"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#pdfModal">
+  DOWNLOAD CV
+</button>
+
+<!-- مودال -->
+<div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pdfModalLabel">Resume PDF</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="photo/SusanSultaniResume (1).pdf" width="100%" height="600px" style="border:none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+</section>
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container my-5 text-white">
+  <div class="row mt-5 "> 
+   
+    <div class="col-lg-6 mb-4">
+      <span class="badge p-3 mb-2">FUN FACT</span>
+      <h2 class="fw-bold">My Experience in <span class="text-danger">Work.</span></h2>
+      <p >
+      
+With hands-on experience in both technical and creative roles, I’ve developed a versatile skill set in
+      </p>
+      <p class="text-secondary">
+        web development, design, and digital tools. Each opportunity has enhanced my ability to solve problems, work efficiently, and deliver impactful results.
+      </p>
+    </div>
+
+    <!-- Stats Side -->
+    <div class="col-lg-6">
+      <div class="row text-center">
+        <div class="col-6 mb-4">
+          <h2 class="fw-bold">30+</h2>
+          <p class="text-uppercase small">Project Done</p>
+        </div>
+        <div class="col-6 mb-4">
+          <h2 class="fw-bold">25+</h2>
+          <p class="text-uppercase small">Award Won</p>
+        </div>
+        <div class="col-6 mb-4">
+          <h2 class="fw-bold">2+</h2>
+<p class="text-uppercase small">Years of Experience</p>
+        </div>
+        <div class="col-6 mb-4">
+          <h2 class="fw-bold">580+</h2>
+          <p class="text-uppercase small">Good Reviews</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="container my-5 text-white">
+  <div class="text-center mb-4">
+    <span class="badge px-4 py-3  bg-danger mb-2">MY WORK</span>
+    <h2 class="fw-bold">Have Look at Creative <span class="text-danger">Work.</span></h2>
+  </div>
+
+  <div class="row align-items-center g-4">
+
+    <div class="col-lg-6">
+      <div class="bg-dark rounded shadow">
+        <img src="photo/machasite.png" alt="project preview" class="img-fluid rounded">
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="back p-4 rounded shadow h-100">
+        <span class="badge mb-2">WEB DESIGN</span>
+        <h5 class="fw-bold text-white">BLACK MACHA WEB SITE</h5>
+        <p class="text-light small">
+        
+"I designed a stylish and fully responsive website for a Matcha brand, using a sleek black theme that highlights the elegance and modern vibe of the product."
+
+        </p>
+        <div class="row text-light small">
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>DATE :</strong> SEPTEMBER, 25TH 2025</div>
+ <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>SERVICE :</strong> Brand Website Design</div>
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>CLIENT :</strong> Black Matcha Co.</div>
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>TOOLS :</strong>  HTML, CSS, Bootstrap 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="row align-items-center g-4">
+
+    <div class="col-lg-6 mt-5">
+      <div class="back rounded shadow border">
+        <img src="photo/jobsite.png" alt="project preview" class="img-fluid rounded">
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="back p-4 rounded shadow h-100">
+        <span class="badge mb-2">WEB DESIGN</span>
+        <h5 class="fw-bold text-white">JOB FIND WEB SITE</h5>
+        <p class="text-light small">
+        "I designed a modern and user-friendly job portal that connects employers with qualified candidates through an intuitive interface. The website features advanced job filtering, responsive design, secure user authentication, and a clean layout to ensure a smooth and efficient experience for both job seekers and recruiters."
+        </p>
+        <div class="row text-light small">
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>DATE:</strong> NOVEMBER, 25TH 2025</div>
+ <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>SERVICE:</strong> Responsive Website Design</div>
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>CLIENT:</strong> ROMETHEME</div>
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>TOOLS:</strong> HTML, CSS, Bootstrap 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="row align-items-center g-4">
+
+    <div class="col-lg-6">
+      <div class="bg-dark rounded my-5 shadow">
+        <img src="photo/reesturan.png" alt="project preview" class="img-fluid rounded">
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="back p-4 rounded shadow h-100">
+        <span class="badge bg-secondary mb-2">WEB DESIGN</span>
+        <h5 class="fw-bold text-white">COUPLE RESTURANT WEB SITE</h5>
+        <p class="text-light small">
+          
+"A modern and vibrant restaurant offering a wide variety of colorful and stylish dishes, paired with high-quality, practical services to ensure a memorable dining experience for every guest."
+        </p>
+        <div class="row text-light small">
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>DATE:</strong> FEBRUARY, 25TH 2025</div>
+ <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>SERVICE:</strong> Responsive Website Design</div>
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>CLIENT:</strong> Our Valued Guests</div>
+          <div class="col-md-6 mb-2"><span class="text-danger">●</span> <strong>TOOLS:</strong>  HTML, CSS, Bootstrap 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+
+
+
+<section class="container my-5 text-white">
+  <div class="row g-4">
+    <!-- Left Article Content -->
+    <div class="col-lg-8">
+      <div class="bg-dark rounded shadow p-4">
+        <h3 class="fw-bold">Build Portfolio & Get a Job</h3>
+        <p class="text-light small">Admin &nbsp; | &nbsp; May 28, 2025 &nbsp; | &nbsp; 5:30 am</p>
+        <img src="photo/sunsite.png" alt="Portfolio Image" class="img-fluid rounded mt-3 w-100">
+        <p class="text-secondary mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus optio illo nesciunt? Tempore, sequi doloremque ducimus facere maxime libero dolor aperiam ipsam iusto sed, fugit nostrum qui dolore aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quas vero aperiam! Sequi atque ducimus pariatur, iusto, delectus laboriosam veritatis accusamus in quisquam, deleniti sunt. Ullam quas incidunt placeat itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellendus quidem soluta deserunt optio. Cum eius ea atque aspernatur corporis deleniti, inventore repudiandae veritatis laborum, maiores consectetur, odit iste recusandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto unde excepturi, culpa nemo corrupti facilis aperiam maiores quaerat eaque ex, quae omnis doloremque consequatur repellendus consequuntur labore aliquam possimus quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa esse laboriosam explicabo ea ad voluptas ipsum libero! Incidunt quae, repellat quaerat magni odio fuga mollitia quidem voluptas officiis eum sunt?</p>
+        <hr>
+        <h3>clothings</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quia suscipit, expedita, sint dolores, in aliquid aut repellat est autem atque! Autem, cupiditate reiciendis nihil voluptate doloremque iusto dignissimos sed! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur voluptas beatae illo autem qui maiores animi ex, consectetur veritatis sint eum quia aperiam sapiente. Maiores consequuntur velit eos provident qui! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, sint. Sapiente obcaecati maiores, nemo corporis cupiditate sequi. Fuga dolores ipsa impedit! Nisi pariatur aspernatur expedita vel eaque veniam nam provident?</p>
+      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="col-lg-4">
+      <!-- About Me -->
+     
+<div class="card-about text-center bg-dark text-white rounded-4 p-3 shadow-lg" style="max-width: 300px; margin: auto;">
+  <span class="badge bg-danger mb-3 px-4 py-2 fs-6">ABOUT ME</span>
+
+  <div class="card-body bg-secondary bg-opacity-10 rounded-4 py-4">
+    <img src="photo/susan3.jpg" class="rounded-circle mb-3" width="80" alt="Steven Evren">
+    <p class="mb-0 text-white-50">Written By</p>
+    <h5 class="fw-bold">STEVEN EVREN</h5>
+  </div>
+
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <a href="#" class="btn btn-secondary btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="btn btn-secondary btn-sm rounded-circle"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="btn btn-secondary btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="btn btn-secondary btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+  </div>
+</div>
+
+      <!-- More Info -->
+    <div class="co-lg-4">
+        <div class=" rounded shadow p-3">
+       
+<div class="card-info text-white bg-dark rounded-4 p-3 shadow-lg" style="max-width: 300px; margin: auto;">
+  <span class="badge bg-danger mb-3 px-4 justify-content-center d-flex  py-2 fs-6">MORE INFO</span>
+
+  <div class="bg-secondary bg-opacity-10 rounded-4 p-3 mb-3 d-flex align-items-center gap-3">
+    <i class="bi bi-mic-fill fs-4"></i>
+    <div>
+      <small class="text-white-50 d-block">CALL US</small>
+      <strong>+123 - 234 - 1234</strong>
+    </div>
+  </div>
+
+  <div class="bg-secondary bg-opacity-10 rounded-4 p-3 mb-3 d-flex align-items-center gap-3">
+    <i class="bi bi-envelope-fill fs-4"></i>
+    <div>
+      <small class="text-white-50 d-block">EMAIL</small>
+      <strong>@AWESOMESITE.COM</strong>
+    </div>
+  </div>
+
+  <div class="bg-secondary bg-opacity-10 rounded-4 p-3 d-flex align-items-center gap-3">
+    <i class="bi bi-geo-alt-fill fs-4"></i>
+    <div>
+      <small class="text-white-50 d-block">LOCATION</small>
+      <strong>99 TH QELILINK STREET</strong>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container py-5 text-white">
+  <div class="row g-4 align-items-start">
+
+    <!-- Text Side -->
+    <div class="col-lg-6">
+      <span class="badge bg-danger mb-3 px-4 py-2 fs-6">CONTACT ME</span>
+      <h2 class="fw-bold mb-3">How can we <span class="text-danger">Help</span> you?</h2>
+     
+      <p class="text-white-50">
+"For any questions, project inquiries, or support <br> don't hesitate to contact us. We're always ready to assist you."</p>
+
+      <ul class="list-unstyled mt-4">
+        <li><strong>ADDRESS :</strong> Herat , Afghanistan</li>
+        <li><strong>PHONE :</strong> +937 - 9475 - 7292</li>
+        <li><strong>EMAIL :</strong> susanyazdan1382@gmail.com</li>
+      </ul>
+
+      <div class="mt-3 d-flex gap-3">
+        <i class="bi bi-twitter fs-4"></i>
+        <i class="bi bi-facebook fs-4"></i>
+        <i class="bi bi-instagram fs-4"></i>
+        <i class="bi bi-linkedin fs-4"></i>
+      </div>
+    </div>
+
+    <!-- Form Side -->
+    <div class="col-lg-6">
+<div class="bg-dark p-4 rounded-4 shadow-lg">
+        <h5 class="text-white mb-3">GET FREE QUOTE NOW!</h5>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button class="btn btn-danger w-100 mb-2">I'M READY TO GET IN</button>
+          <div class="form-text text-white-50"><i class="bi bi-info-circle me-1"></i> TERMS & CONDITIONS</div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="consultation-section my-5" id="contact">
+  <div class="container consultation p-5">
+    <div class="row align-items-center text-white">
+
+      <!-- Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="photo/s2-removebg-preview.png" class="img-fluid " alt="Consultation Image">
+      </div>
+
+      <!-- Form -->
+      <div class="col-md-6">
+        <h2 class="fw-bold">Let's Project & Get a <br>Free Consultation.</h2>
+        <p class="text-danger">Have a Project? Let's do it.</p>
+
+        <form id="consultation-form" class="d-flex flex-column flex-sm-row">
+          <input type="email" id="email" class="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Enter your Email ..." required>
+          <button type="submit" class="btn btn-danger">SUBMIT</button>
+        </form>
+
+        <p id="success-msg" class="text-success mt-3 d-none">
+          <i class="bi bi-check2 me-1"></i> Your submission was successful.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="text-center pt-2">@ copy right susan sultani</p>
+</footer>
+
+<!-- submit script  -->
+<script>
+  document.getElementById("consultation-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("success-msg").classList.remove("d-none");
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>
+  // When skills section is in view, animate progress bars
+  const skillsSection = document.getElementById('skills');
+  const progressBars = document.querySelectorAll('.progress-bar');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        progressBars.forEach(bar => {
+          bar.style.width = bar.getAttribute('data-skill');
+        });
+        observer.disconnect();
+      }
+    });
+  }, {
+    threshold: 0.4
+  });
+
+  observer.observe(skillsSection);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const effects = {
+    'changing-word-1': ["Susan Sultani"]
+  };
+
+  function typeEffect(elId, words) {
+    let i = 0, j = 0, isDeleting = false;
+    const el = document.getElementById(elId);
+
+    function type() {
+      const word = words[i];
+      const display = isDeleting ? word.substring(0, j--) : word.substring(0, j++);
+
+      el.textContent = display;
+
+      if (!isDeleting && j === word.length + 1) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+        setTimeout(type, 500);
+      } else {
+        setTimeout(type, isDeleting ? 80 : 150);
+      }
+    }
+
+    type();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    for (let id in effects) {
+      typeEffect(id, effects[id]);
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
